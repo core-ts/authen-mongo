@@ -1,0 +1,29 @@
+{
+  "name": "authen-mongo",
+  "version": "0.0.1",
+  "description": "authen-mongo",
+  "main": "./lib/index.js",
+  "types": "./src/index.ts",
+  "scripts": {
+    "build:lib": "tsc",
+    "clean:lib": "rimraf lib"
+  },
+  "dependencies": {
+    "mongodb": "^3.6.9"
+  },
+  "devDependencies": {
+    "@types/mongodb": "^3.6.18",
+    "tslint": "5.10.0",
+    "typescript": "^3.8.3"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/core-ts/authen-mongo"
+  },
+  "keywords": [
+    "authen-mongo"
+  ]
+}
