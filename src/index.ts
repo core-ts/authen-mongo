@@ -7,6 +7,7 @@ export interface UserInfo {
   id: string;
   username: string;
   email?: string;
+  contact?: string;
   displayName: string;
   gender?: string;
   password?: string;
@@ -27,6 +28,7 @@ export interface UserInfo {
   accessDateTo?: Date;
   accessTimeFrom?: Date;
   accessTimeTo?: Date;
+  twoFactors?: boolean;
 
   language?: string;
   dateFormat?: string;
@@ -55,7 +57,7 @@ export interface UserStatus {
   disable?: number | string;
   suspended?: number | string;
 }
-const fields = ['username', 'email', 'displayName', 'gender', 'password', 'disable', 'deactivated', 'suspended', 'lockedUntilTime', 'successTime', 'failTime', 'failCount', 'passwordModifiedTime', 'maxPasswordAge', 'roles', 'userType', 'privileges', 'accessDateFrom', 'accessDateTo', 'accessTimeFrom', 'accessTimeTo', 'language', 'dateFormat', 'timeFormat', 'imageURL'];
+const fields = ['username', 'email', 'contact', 'displayName', 'twoFactors', 'gender', 'password', 'disable', 'deactivated', 'suspended', 'lockedUntilTime', 'successTime', 'failTime', 'failCount', 'passwordModifiedTime', 'maxPasswordAge', 'roles', 'userType', 'privileges', 'accessDateFrom', 'accessDateTo', 'accessTimeFrom', 'accessTimeTo', 'language', 'dateFormat', 'timeFormat', 'imageURL'];
 export function buildProject(fs: string[], mp?: StringMap): any {
   if (!fs || fs.length === 0) {
     return undefined;

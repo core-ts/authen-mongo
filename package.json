@@ -1,6 +1,6 @@
 {
   "name": "authen-mongo",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "authen-mongo",
   "main": "./lib/index.js",
   "types": "./src/index.ts",
